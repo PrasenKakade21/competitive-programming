@@ -1,0 +1,46 @@
+n = 7
+stars = 1
+repeat =int( (n-1)/2)
+spaces = repeat
+# top part
+for _ in range(repeat):
+    s = " " *spaces + "*"*stars+" "*spaces
+    print(s)
+    stars = stars+2
+    spaces = spaces - 1
+# mid part
+print("*"*n)
+
+# bottom part
+stars = n-2
+spaces = 1
+for _ in range(repeat):
+    s = " " *spaces + "*"*stars+" "*spaces
+    print(s)
+    stars = stars-2
+    spaces = spaces +1
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#    *
+#   ***
+#  *****
+# *******
+#  *****
+#   ***
+#    *
